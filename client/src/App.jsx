@@ -3,6 +3,7 @@ import Navigation from "./components/Navigation";
 import Homepage from "./Pages/Homepage";
 import Footer from "./components/Footer";
 import AllRooms from "./Pages/AllRooms";
+import RoomDetails from "./Pages/RoomDetails";
 
 
 export default function App(){
@@ -15,6 +16,7 @@ export default function App(){
       <Routes>
         <Route path="/" element={<Homepage />} ></Route>
         <Route path="/rooms" element={<AllRooms />} ></Route>
+        <Route path="/rooms/:id" element={<RoomDetails />} ></Route>
       </Routes>
       </div>
     <Footer />
