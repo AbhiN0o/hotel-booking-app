@@ -1,6 +1,7 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Homepage from "./Pages/Homepage";
+import Footer from "./components/Footer";
 
 
 export default function App(){
@@ -14,6 +15,7 @@ export default function App(){
         <Route path="/" element={<Homepage />} ></Route>
       </Routes>
       </div>
+    <Footer />
     </div>
   )
 }
