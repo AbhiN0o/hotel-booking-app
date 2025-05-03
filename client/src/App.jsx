@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import AllRooms from "./Pages/AllRooms";
 import RoomDetails from "./Pages/RoomDetails";
 import MyBookings from "./Pages/MyBookings";
+import HotelReg from "./components/HotelReg";
 
 
 export default function App(){
@@ -13,6 +14,7 @@ export default function App(){
   return(
     <div>
       {isOwnerPath ?"": <Navigation />}
+      <HotelReg />
       <div className="min-h-[70vh]">
       <Routes>
         <Route path="/" element={<Homepage />} ></Route>
